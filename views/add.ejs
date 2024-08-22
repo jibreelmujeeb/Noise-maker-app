@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Noisy Person</title>
+    <style>
+        button {
+            outline: none;
+            border: none;
+            width: 240px;
+            height: 40px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+    <h1>Add a New Noisy Person</h1>
+    <h5><%= message %> </h5>
+    <form action="/add" method="POST" style="display: flex; flex-direction: row; text-align: center;align-items: center;justify-content: center; gap: 20px;">
+        <label for="name">Name:</label>
+        <input type="text" name="username" required>
+        <br>
+        <label for="noiseLevel">Noise Level:</label>
+        <input type="text"  name="noiseLevel" required>
+        <button type="submit">Add Person</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <a href="/">Back to Classroom</a>
+    <br>
+    <br>
+    <form action="/view" method="POST">
+        <button>View noise maker</button>
+    </form>
+</div>
+</body>
+</html>

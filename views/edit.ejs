@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Noisy Person</title>
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    button {
+            outline: none;
+            border: none;
+            width: 240px;
+            height: 40px;
+            margin-top: 20px;
+            cursor: pointer;
+    }
+</style>
+<body>
+    <div style="text-align: center;">
+    <h1>Edit Noisy Person</h1>
+    <form action="/updateEdit" method="POST">
+        <input type="" value="<%= id %>" name="userid" style="display: none;">
+
+        <h6>UserId: <%= id %></h6>
+        <div style="display: flex; justify-content: center; gap: 10px;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="<%= user.name %>" required>
+        <br>
+        <label for="noiseLevel">Noise Level:</label>
+        <input type="text" id="noiseLevel" name="noiseLevel" value="<%= user.noiseLevel %>" required>
+    </div>
+        <br>
+        <button type="submit">Update Person</button>
+    </form>
+    <br>
+    <a href="/">Back to Classroom</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button {
+        outline: none;
+            border: none;
+            width: 240px;
+            height: 40px;
+            margin-top: 20px;
+            cursor: pointer;
+    }
+
+    .form {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .mainname {
+        text-align: center;
+        font-size: 40px;
+        color: rgb(158, 118, 70);
+    }
+</style>
+<body>
+    <div class="mainname">
+    Welcome to noise maker detector
+    </div>
+    <div class="form">
+    <form action="view" method="POST">
+        <button>View noise maker</button>
+    </form>
+    <form action="/add" method="POST">
+        <button>Add noise maker</button>
+    </form>
+</div>
+</body>
+</html>
